@@ -1,0 +1,288 @@
+/* This is the CSS Style Sheet. It contains information which stylizes/designs the entire webpage and gives it functionality.  */
+
+/* Each tag, section, or class is listed here and are given specific attributes of how it should appear on the main webpage. */
+
+
+@font-face {
+    font-family: "Majesti Banner heavy";
+    src: url("desktop/school/Spring2/GRA310/Final_Project/fonts/MajestiBanner-Heavy.woff");
+    src:
+    url("desktop/school/Spring2/GRA310/Final_Project/fonts/MajestiBanner-Heavy.woff") format("woff"),
+    url("desktop/school/Spring2/GRA310/Final_Project/fonts/MajestiBanner-Heavy.woff") format("opentype"),
+    url("desktop/school/Spring2/GRA310/Final_Project/fonts/MajestiBanner-Heavy.woff") format("svg");
+    }
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size-adjust: .58;
+    
+}
+
+/* This is the stylization for the BODY tag */
+body{
+    height: 100%;
+    background-color: #000103; 
+    background-image:url(images/Restaurant.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+} 
+
+#wrapper {
+    margin-left: auto;
+    margin-right:auto;
+    width: 1380px;
+}
+
+header{
+    display: inline;
+    text-align: center;
+    
+}
+.logo {
+    text-align: center;
+    margin: 25px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 25px;
+}
+
+/* Header Navigation consisting of menu items*/
+.menu {
+    background-color:rgba(51, 51, 51, 0.95);
+    min-width: 100%;
+    min-height: auto;
+    align-content: center;
+    position: sticky;
+    top: 0%; 
+}
+
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    top: 0px;
+    display: flex;
+    display: inline;
+    
+}
+
+.menu li { 
+    display: inline-flex;   
+}
+
+.menu li a {
+    background-color:rgba(51, 51, 51, 0.95);
+    font-family: "Majesti Banner Heavy";
+    font-size: 24px;
+    padding: 14px 16px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.menu li a:hover {
+    background-color: #be1e2e;
+}
+
+.menu .active {
+    background-color:rgba(51, 51, 51, 0);  
+}
+
+/* This is the stylization for the MAIN tag*/
+main {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.herobox {
+    padding-top: 100px;
+    padding-bottom: 500px;
+}
+
+.herobox2 {
+    padding-top: 100px;
+}
+
+.herobox3 {
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+.herobox4 {
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+.mainbox {
+    background-color: rgba(255, 255, 255, 0.26);
+    max-width: 850px;
+    height: auto;
+    border-radius: 20px 0px 20px 0px;
+    margin-top: 50px;
+    padding-bottom: 50px;  
+}
+
+
+section {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.toptext {
+    flex: 2;
+    color: #ffffff;
+    text-align: center;
+    align-content: space-between;
+    justify-content: center;
+    
+}
+
+.toptext p {
+    font-family: "athelas", serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 24px;
+}
+
+.bottomtext {
+    flex: 2;
+    color: #ffffff;
+    font-family: "athelas", serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+h1 {
+    color: #be1e2d;
+    font-family: "athelas", serif;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.466);
+    text-decoration: none;
+    text-decoration-color: white;
+    text-align: center;
+}
+
+h1.p {
+    text-align: center;
+}
+
+
+/* Appetizers found on the Menu Page*/
+.apps {
+    padding-top: 1px;
+    justify-content: center;
+    align-items: center;
+}
+.rolls {
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+
+/* Entrees found on the Menu Page */
+.course {
+    padding-top: 5px;
+    justify-content:center;
+    align-items: center;
+}
+
+.plates {
+    padding-top: 10px;
+}
+
+.reservation {
+    padding-bottom: 50px;
+}
+
+
+/* Footer: contains basic information as well as a footer navigation menu */
+footer {
+    font-family: "athelas", serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal;
+    font-size: small;
+    color: white;
+    padding-top: 400px;
+    display: inline-flex;
+    justify-content: space-between;
+    /* margin-top: 500px; */
+    
+    background-color: rgba(255, 255, 255, 0.26);
+    min-width: 100%;
+    max-height: 75px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center; 
+    
+}
+.container {
+    word-spacing: 3px;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;  
+    
+}
+
+.footnav li a {
+    color: white; 
+    text-decoration: none;
+    font-family: "athelas", serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.219);     
+}
+
+.footnav {
+    display: flex;
+    display: inline;
+    padding-left: 18px;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.footnav p {
+    margin: 5px;
+    padding-left: 8px;
+    padding-right: 10px;
+}
+
+.footnav li a:hover {
+    text-decoration: underline;
+}
+.footnav .active {
+    background-color:rgba(255, 255, 255, 0);  
+}
+
+.vertical {
+    font-size: 16px;
+    writing-mode:vertical-lr;
+    text-orientation:sideways;
+    transform: rotate(180deg);
+}
+
+.footcontact p {
+    color: white;
+    margin: 5px;
+    padding-left: 8px;
+    padding-right: 150px;
+    justify-content: space-between;
+    align-content: space-between;
+
+}
+
+.copy {
+    text-align: justify;
+    text-justify: right;
+    padding-right: 25px;
+    
+}
